@@ -15,11 +15,11 @@
       </div>
       <div class="col-5 mb-3 mt-4">
         <label class="form-label">Data de Nascimento</label>
-        <input type="date" class="form-control" id="nascimento" name="nascimento" placeholder="name@example.com">
+        <input type="date" class="form-control" id="nascimento" name="nascimento">
       </div>
       <div class="col-5 mb-3 mt-4">
         <label class="form-label">Senha</label>
-        <input type="password" class="form-control" id="senha" name="senha" placeholder="name@example.com">
+        <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha">
       </div>
       <button type="button" class="btn btn-outline" style="background-color: #d4bbe8; color: #fff">Cadastrar</button>
 
