@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cadastro;
 use App\Http\Controllers\Entrar;
+use App\Http\Controllers\Contato;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,8 @@ Route::get('/', function () {
 Route::get('/cadastro', [Cadastro::class, 'index']);
 Route::post('/cadastro/registro', [Cadastro::class, 'cadastro']);
 
+//entrar
 Route::get('/entrar', [Entrar::class, 'index']);
 Route::post('/entrar', [Entrar::class, 'entrar']);
+
+Route::get('/contato', [Contato::class, 'index']);
