@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cadastro;
+use App\Http\Controllers\Entrar;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,6 @@ Route::get('/', function () {
 //cadastro
 Route::get('/cadastro', [Cadastro::class, 'index']);
 Route::post('/cadastro/registro', [Cadastro::class, 'cadastro']);
+
+Route::get('/entrar', [Entrar::class, 'index']);
+Route::post('/entrar', [Entrar::class, 'entrar']);

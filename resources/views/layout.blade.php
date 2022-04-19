@@ -12,19 +12,19 @@
           <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('/cadastro') }}"><button type="button" class="btn btn-outline-light">
+                <a class="nav-link" href="{{ url('/cadastro') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Cadastro </button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light">
+                <a class="nav-link" href="{{ url('/entrar')}}"><button type="button" class="btn btn-outline-light fw-bold">
                     Entrar </button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-outline-light">
+                <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-outline-light fw-bold">
                     Produtos </button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light">
+                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light fw-bold">
                     Contato </button></a>
               </li>
             </ul>

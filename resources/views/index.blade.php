@@ -32,6 +32,6 @@
     <div class="card-body text-center px-4">
         <h5 class="card-title">Faça o cadastro</h5>
         <a href="{{ url('/cadastro')}}" class="btn btn-outline-primary">Cadastro</a>
-        <p class="card-text mt-2">Já possui cadastro? <a href="#" style="text-decoration: none">Entre</a></p>
+        <p class="card-text mt-2">Já possui cadastro? <a href="{{ url('/entrar') }}" style="text-decoration: none">Entre</a></p>
     </div>
 </div>

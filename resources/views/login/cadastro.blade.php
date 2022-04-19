@@ -1,6 +1,6 @@
 @include('layout')
 
-<div class="card w-50">
+<div class="card w-50 mx-auto mt-4">
   <div class="card-body">
     <h5 class="card-title">Preencha o formulário para realizar o cadastro</h5>
       <form action="{{ url('/cadastro/registro') }}" method="post">
@@ -26,7 +26,7 @@
         <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha">
       </div>
 
-      <button type="submit" class="btn btn-outline" style="background-color: #d4bbe8; color: #fff">Cadastrar</button>
+      <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff">Cadastrar</button>
 
     </form>
   </div>
