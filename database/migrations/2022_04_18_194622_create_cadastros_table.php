@@ -19,6 +19,7 @@ class CreateCadastrosTable extends Migration
             $table->string('email');
             $table->date('nascimento');
             $table->string('senha');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

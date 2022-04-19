@@ -18,4 +18,6 @@ Route::get('/', function () {
     return view('index');
 });
 
+//cadastro
 Route::get('/cadastro', [Cadastro::class, 'index']);
+Route::post('/cadastro/registro', [Cadastro::class, 'cadastro']);
