@@ -8,26 +8,26 @@ use Illuminate\Support\Facades\DB;
 class Cadastro extends Controller
 {
     public function index() {
-        $cadastro = DB::table('cadastros')->get();
+        $cadastro = DB::table('users')->get();
 
-        return view('login.cadastro', ['cadastros' => $cadastro]);
+        return view('login.cadastro', ['users' => $cadastro]);
     }
 
+    
     public function cadastro(Request $request) {
 
         $request ->validate([
-            'senha' => 'required|max:10'
+            'password' => 'required|max:10'
         ]);
 
-        DB::table('cadastros')->insert([
-            'nome' => $request->nome,
+        DB::table('users')->insert([
+            'name' => $request->name,
             'email' => $request->email,
-            'nascimento' => $request->nascimento,
-            'senha' => $request->senha  
+            'password' => $request->password
         ]);
 
         return redirect('/')->with('status', 'Usuário cadastrado com sucesso!');
 
         
     }
-}
+} 

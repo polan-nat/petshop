@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Cadastro;
 use App\Http\Controllers\Entrar;
 use App\Http\Controllers\Contato;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +29,6 @@ Route::get('/entrar', [Entrar::class, 'index']);
 Route::post('/entrar', [Entrar::class, 'entrar']);
 
 Route::get('/contato', [Contato::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');

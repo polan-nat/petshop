@@ -8,7 +8,7 @@
 
       <div class="col-5 mb-3 mt-4">
         <label class="form-label">Nome completo</label>
-        <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o seu nome">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Insira o seu nome">
       </div>
 
       <div class="col-5 mb-3 mt-4">
@@ -17,13 +17,8 @@
       </div>
 
       <div class="col-5 mb-3 mt-4">
-        <label class="form-label">Data de Nascimento</label>
-        <input type="date" class="form-control" id="nascimento" name="nascimento">
-      </div>
-
-      <div class="col-5 mb-3 mt-4">
         <label class="form-label">Senha</label>
-        <input type="password" class="form-control" id="senha" name="senha" placeholder="Insira sua senha">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha">
       </div>
 
       <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff">Cadastrar</button>

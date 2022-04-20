@@ -12,15 +12,14 @@ class Entrar extends Controller
         return view ('login.entrar');
     }
 
-    public function entrar(Request $request) 
-    {
-        if(!Auth::attempt([$request->only('email', 'password')])) {
+    public function entrar(Request $request) {
+        if(!Auth::attempt($request->only(['email', 'password']))) {
             return redirect()
                 ->back()
-                ->withErrors('Usuario e/ou senha incorretos');
+                ->withErrors('Usuário e/ou senha incorretos');
         }
 
-        return redirect('/')->with('status', 'Usuario logado');
-
+        return redirect('/')->with('status', 'Usuário logado com sucesso!');
+    
     }
 }
