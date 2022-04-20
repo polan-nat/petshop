@@ -18,10 +18,10 @@
             <label class="password">Senha</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Insira a sua senha">
           </div>
-          
+
           <button type="submit" class="btn btn-outline-primary">Entrar</button>
 
-          <p class="card-text mt-2">Ainda não possui cadastro?<a href="{{ url('/cadastro') }}"> Cadastre-se </a></p>
+          <p class="card-text mt-2">Ainda não possui cadastro?<a href="{{ url('/cadastro') }}" style="text-decoration: none"> Cadastre-se </a></p>
 
         </div>
       </div>
