@@ -9,17 +9,15 @@ class Entrar extends Controller
 {
     public function index()
     {
-        return view ('login.entrar');
+        return view('login.entrar');
     }
 
     public function entrar(Request $request) {
-        if(!Auth::attempt($request->only(['email', 'password']))) {
-            return redirect()
-                ->back()
-                ->withErrors('Usuário e/ou senha incorretos');
-        }
 
-        return redirect('/')->with('status', 'Usuário logado com sucesso!');
-    
+       if(!Auth::attempt($request->only(['email', 'password']))) {
+            return redirect('/')->with('status', 'Usuário logado com sucesso!');
+       }
+
+     //Consertar o login, ele aprova todos, é pra aprovar somente os cadastrados.
     }
 }

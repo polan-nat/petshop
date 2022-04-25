@@ -31,5 +31,7 @@
           </div>
         </div>
       </nav>
+
+    <!-- Implementar metodo de acessar o perfil do usuario e atraves do IF auth -->
 </body>
 </html>

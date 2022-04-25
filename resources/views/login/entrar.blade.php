@@ -19,7 +19,7 @@
             <input type="password" class="form-control" id="password" name="password" placeholder="Insira a sua senha">
           </div>
 
-          <button type="submit" class="btn btn-outline-primary">Entrar</button>
+          <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff">Entrar</button>
 
           <p class="card-text mt-2">Ainda não possui cadastro?<a href="{{ url('/cadastro') }}" style="text-decoration: none"> Cadastre-se </a></p>
 
