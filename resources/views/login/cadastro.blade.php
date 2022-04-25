@@ -19,6 +19,7 @@
       <div class="col-5 mb-3 mt-4">
         <label class="form-label">Senha</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha">
+        <span class="bi bi-eye" style="position: absolute; top: 290px; right: 430px;"></span>
       </div>
 
       <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff">Cadastrar</button>
@@ -26,3 +27,19 @@
     </form>
   </div>
 </div>
+
+<script>
+  let btn = document.querySelector('.bi-eye');
+
+  btn.addEventListener('click', function() {
+    
+    let input = document.querySelector('#password');
+
+    if(input.getAttribute('type') == 'password') {
+      input.setAttribute('type', 'text');
+    } else {
+      input.setAttribute('type', 'password');
+    } 
+
+  });
+</script>
