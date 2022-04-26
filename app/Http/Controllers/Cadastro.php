@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class Cadastro extends Controller
 {
@@ -16,18 +19,13 @@ class Cadastro extends Controller
     
     public function cadastro(Request $request) {
 
-        $request ->validate([
-            'password' => 'required|max:10'
-        ]);
+    $data = $request->except('__token');
+    $data['password'] = Hash::make($data['password']);
+    $user = User::create($data);
 
-        DB::table('users')->insert([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password
-        ]);
+    Auth::login($user);
 
-        return redirect('/')->with('status', 'Usuário cadastrado com sucesso!');
-
+    return redirect('/')->with('status', 'Usuário cadastrado com sucesso!');
         
     }
 } 

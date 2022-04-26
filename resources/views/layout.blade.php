@@ -21,7 +21,7 @@
                     Entrar </button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><button type="button" class="btn btn-outline-light fw-bold">
+                <a class="nav-link" aria-current="page" href="{{ url('/produtos') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Produtos </button></a>
               </li>
               <li class="nav-item">
@@ -32,7 +32,6 @@
           </div>
         </div>
       </nav>
-
     <!-- Implementar metodo de acessar o perfil do usuario e atraves do IF auth -->
 </body>
 </html>
