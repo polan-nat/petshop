@@ -13,6 +13,7 @@
           <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
+               @guest 
                 <a class="nav-link" href="{{ url('/cadastro') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Cadastro </button></a>
               </li>
@@ -20,6 +21,7 @@
                 <a class="nav-link" href="{{ url('/entrar')}}"><button type="button" class="btn btn-outline-light fw-bold">
                     Entrar </button></a>
               </li>
+              @endguest
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="{{ url('/produtos') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Produtos </button></a>
