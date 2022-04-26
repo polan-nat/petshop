@@ -28,6 +28,9 @@
                 <a class="nav-link" href="{{ url('/contato') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Contato </button></a>
               </li>
+              @auth
+                <a href="/sair" class="nav-link"><button type="button" class="btn btn-outline-danger fw-bold"><i class="bi bi-box-arrow-right"></i> Sair</button></a>
+              @endauth
             </ul>
           </div>
         </div>

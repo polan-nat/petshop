@@ -37,3 +37,8 @@ Route::get('/contato', [Contato::class, 'index']);
 
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/sair', function() {
+    Auth::logout();
+    return redirect('/')->with('status','Você saiu!');
+}); 
