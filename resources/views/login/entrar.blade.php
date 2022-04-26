@@ -1,6 +1,6 @@
 @include('layout')
 
-    @include('erros', ['errors' => $errors])
+    @include('errors.erros', ['errors' => $errors])
 
 <form method="post">
     @csrf 
@@ -29,18 +29,4 @@
       
 </form>
 
-<script>
-  let btn = document.querySelector('.bi-eye');
-
-  btn.addEventListener('click', function() {
-    
-    let input = document.querySelector('#password');
-
-    if(input.getAttribute('type') == 'password') {
-      input.setAttribute('type', 'text');
-    } else {
-      input.setAttribute('type', 'password');
-    } 
-
-  });
-</script>
+<script src="{{ asset('js/eye.js') }}"></script>
