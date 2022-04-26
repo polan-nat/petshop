@@ -20,7 +20,7 @@ class Entrar extends Controller
          ->back()
          ->withErrors('Usuário e/ou senha incorretos');
      } 
-     return redirect('/')->with('status','Usuário logado com sucesso');
+     return redirect('/')->with('status','Usuário logado com sucesso!');
 
      //Consertar o login, ele aprova todos, é pra aprovar somente os cadastrados.
     }

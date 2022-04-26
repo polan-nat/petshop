@@ -28,6 +28,48 @@
     </div>
 </div>
 
+<!-- Adicionar uma linha aqui -->
+
+<a href="{{ url('/produtos')}}" style="text-decoration: none"><h5 class="text-end mt-2 px-5">Veja mais <i class="bi bi-arrow-right-circle"></i></h5></a>
+
+<div class="row justify-content-center mt-4">
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+@guest
 <div class="card text-dark bg-light mb-3 mt-4" style="width: 18rem; margin-left: 580px">
     <div class="card-body text-center px-4">
         <h5 class="card-title">Faça o cadastro</h5>
@@ -35,3 +77,4 @@
         <p class="card-text mt-2">Já possui cadastro? <a href="{{ url('/entrar') }}" style="text-decoration: none">Entre</a></p>
     </div>
 </div>
+@endguest

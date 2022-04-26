@@ -26,10 +26,12 @@
                 <a class="nav-link" aria-current="page" href="{{ url('/produtos') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Produtos </button></a>
               </li>
+              @guest
               <li class="nav-item">
                 <a class="nav-link" href="{{ url('/contato') }}"><button type="button" class="btn btn-outline-light fw-bold">
                     Contato </button></a>
               </li>
+              @endguest
               @auth
                 <a href="/sair" class="nav-link"><button type="button" class="btn btn-outline-danger fw-bold"><i class="bi bi-box-arrow-right"></i> Sair</button></a>
               @endauth
