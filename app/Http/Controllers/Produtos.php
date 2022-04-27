@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Produtos extends Controller
 {
     public function index() {
-        return view ('produtos');
+        return view ('produto.produtos');
     }
 }
