@@ -34,20 +34,17 @@
         </li>
     </ul>
 
+    @auth
     <hr>
-   
-    <div class="dropdown">
-        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/polan-nat.png" width="40" height="40" class="rounded-circle me-2">
+    <div class="d-flex justify-content-between">
+        <a href="#" class="text-white text-decoration-none">
+            <i class="bi bi-person-circle fs-2"></i>
             <strong><!-- Nome do usuario --></strong>
         </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li>
-                <a href="#" class="dropdown-item">Perfil</a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-item">Sair</a>
-            </li>
-        </ul>
+        <a href="{{ url('/sair') }}" class="text-white text-decoration-none">
+            <i class="bi bi-box-arrow-right fs-3"></i>
+        </a>
     </div>
+    @endauth
+
 </div>
