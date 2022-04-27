@@ -22,7 +22,7 @@
 
               @auth
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><i class="bi bi-person-circle fs-3" data-toggle="tooltip" data-placement="right" title="Abrir perfil">
+                <a class="nav-link text-white" aria-current="page" href="{{ url('/usuario') }}"><i class="bi bi-person-circle fs-3" data-toggle="tooltip" data-placement="right" title="Abrir perfil">
                 </i></a>
               </li>
               @endauth

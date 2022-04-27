@@ -29,15 +29,21 @@ Route::post('/cadastro/registro', [Cadastro::class, 'cadastro']);
 //entrar
 Route::get('/entrar', [Entrar::class, 'index']);
 Route::post('/entrar', [Entrar::class, 'entrar']);
+Route::get('/usuario', [Entrar::class, 'user']);
 
+//produtos
 Route::get('/produtos', [Produtos::class,'index']);
+Route::get('/produtos/toy', [Produtos::class, 'toy']);
+Route::get('/produtos/higiene', [Produtos::class, 'higiene']);
+Route::get('/produtos/racao', [Produtos::class, 'racao']);
+Route::get('/produtos/remedios', [Produtos::class, 'remedio']);
 
-
+//contato
 Route::get('/contato', [Contato::class, 'index']);
 
+//auth
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-
 Route::get('/sair', function() {
     Auth::logout();
     return redirect('/')->with('status','Você saiu!');

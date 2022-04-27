@@ -24,4 +24,8 @@ class Entrar extends Controller
 
      //Consertar o login, ele aprova todos, é pra aprovar somente os cadastrados.
     }
+
+    public function user() {
+        return view ('login.usuario');
+    }
 }
