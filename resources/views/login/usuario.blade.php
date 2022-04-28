@@ -40,3 +40,4 @@
                  </form>
 </div>
 
+<!-- Olhar esse site: https://acervolima.com/laravel-apagar-registros/#:~:text=Segundo%20M%C3%A9todo%3A%20A%20segunda%20maneira,Modelo%20de%20Usu%C3%A1rio%20(F%C3%A1cil).&text=%2D%3Ename(%20'users.,destroy'%20)%3B-->
