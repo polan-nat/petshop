@@ -21,7 +21,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ url('/produtos/racao') }}" class="nav-link text-white">
+           <a href="{{ url('/produtos/racao') }}" class="nav-link text-white">
                 <img src="{{ asset('img/racao.png')}}" width="50" height="50">
                 Ração
             </a>
@@ -37,7 +37,7 @@
     @auth
     <hr>
     <div class="d-flex justify-content-between">
-        <a href="#" class="text-white text-decoration-none" data-toggle="tooltip" data-placement="right" title="Abrir perfil">
+        <a href="{{ url('/usuario')}}" class="text-white text-decoration-none" data-toggle="tooltip" data-placement="right" title="Abrir perfil">
             <i class="bi bi-person-circle fs-2"></i>
             <strong><!-- Nome do usuario --></strong>
         </a>

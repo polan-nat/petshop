@@ -20,12 +20,29 @@ class Entrar extends Controller
          ->back()
          ->withErrors('Usuário e/ou senha incorretos');
      } 
-     return redirect('/')->with('status','Usuário logado com sucesso!');
+     return redirect('/')->with('status','Bem vindo '. Auth::user()->name);
 
      //Consertar o login, ele aprova todos, é pra aprovar somente os cadastrados.
     }
 
     public function user() {
-        return view ('login.usuario');
+        $user = Auth::user()->name;
+
+        return view('login.usuario', compact('user'));
     }
+
+    public function update(Request $request) {
+        $user = Auth::user()->name;
+
+
+        return view('login.usuario', compact('user'))->with('status', 'O cadastro foi atualizado!');
+    }
+
+    public function destroy() {
+        Auth::delete()->name;
+
+        return redirect('/')->with('Usuário excluido!');
+
+    }
+
 }
