@@ -38,11 +38,11 @@ class Entrar extends Controller
         return view('login.usuario', compact('user'))->with('status', 'O cadastro foi atualizado!');
     }
 
-    public function destroy($id) {
-        $user = Auth::user('id', $id)->findOrFail()->delete();
+    public function destroy() {
+        $user = Auth::user()->name->delete();
 
 
-        return redirect('/')->with('Usuário excluido!');
+        return redirect('/')->with('status', 'Usuário excluido!');
 
     }
 
