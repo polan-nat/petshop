@@ -30,8 +30,7 @@ Route::post('/cadastro/registro', [Cadastro::class, 'cadastro']);
 Route::get('/entrar', [Entrar::class, 'index']);
 Route::post('/entrar', [Entrar::class, 'entrar']);
 Route::get('/usuario', [Entrar::class, 'user']);
-Route::post('/usuario/att', [Entrar::class, 'update']);
-Route::delete('/usuario/del', [Entrar::class, 'destroy']);
+
 
 //produtos
 Route::get('/produtos', [Produtos::class,'index']);

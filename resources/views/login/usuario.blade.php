@@ -13,31 +13,26 @@
       </div>
     </div>
 
-    <form action="{{ url('/usuario/att') }}" method="post">
+    <form>
         @csrf
                 <div class="col-5 mb-3 mt-4">
                     <label class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome atual: {{ $user }}">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome atual: {{ $user }}" disabled>
                 </div>
             
                 <div class="col-5 mb-3 mt-4">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" disabled>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email atual: {{ $email }}" disabled>
                 </div>
             
                 <div class="col-5 mb-3 mt-4">
                     <label class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="password" name="password" >
+                    <input type="password" class="form-control" id="password" name="password" disabled>
                 </div>
-            
                 <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff;">Atualizar</button>
+            <!-- Incrementar opção de atualizar o cadastro ou excluir-->
     </form>
-            
-                <form action="{{ url('/usuario/del')}}" method="post">
-                    @csrf 
-                    @method('DELETE')
-                <button class="btn btn-outline-danger fw-bold mt-3">Excluir</button>
-                 </form>
+    <button class="btn btn-outline-danger mt-2"><a href="{{ url('/sair') }}" class="text-decoration-none">Sair</a></button>
 </div>
 
 <!-- Olhar esse site: https://acervolima.com/laravel-apagar-registros/#:~:text=Segundo%20M%C3%A9todo%3A%20A%20segunda%20maneira,Modelo%20de%20Usu%C3%A1rio%20(F%C3%A1cil).&text=%2D%3Ename(%20'users.,destroy'%20)%3B-->

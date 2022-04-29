@@ -7,13 +7,12 @@ use Illuminate\Support\Facades\Auth;
 
 class Entrar extends Controller
 {
-    public function index()
-    {
+   
+    public function index() {
         return view('login.entrar');
     }
 
-    public function entrar(Request $request)
-    {
+    public function entrar(Request $request) {
 
      if(!Auth::attempt($request->only(['email', 'password']))) {
          return redirect()
@@ -22,28 +21,17 @@ class Entrar extends Controller
      } 
      return redirect('/')->with('status','Bem vindo '. Auth::user()->name);
 
-     //Consertar o login, ele aprova todos, é pra aprovar somente os cadastrados.
     }
 
     public function user() {
+
         $user = Auth::user()->name;
+        $email = Auth::user()->email;
 
-        return view('login.usuario', compact('user'));
+        return view('login.usuario', compact('user','email'));
     }
 
-    public function update(Request $request) {
-        $user = Auth::user()->name;
-
-
-        return view('login.usuario', compact('user'))->with('status', 'O cadastro foi atualizado!');
-    }
-
-    public function destroy() {
-        $user = Auth::user()->name->delete();
-
-
-        return redirect('/')->with('status', 'Usuário excluido!');
-
-    }
-
+    
 }
+
+
