@@ -29,7 +29,7 @@
 <h5 class="d-flex justify-content-center mt-3">Nossos produtos</h5>
 
 <div class="d-flex justify-content-around mt-4">
-<div class="card text-white bg-success mb-3" style="width: 15rem;">
+<div class="card text-white bg-dark mb-3" style="width: 15rem;">
   <div class="card-body">
     <h5 class="card-title text-center"><a href="{{ url('/produtos/toy') }}" style="text-decoration: none; color: #fff;" data-toggle="tooltip" data-placement="right" title="Ir para brinquedos">Brinquedos</h5>
     <img src="{{ asset('img/brinq.jpg')}}" class="img-thumbnail">
@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="card text-white bg-success mb-3" style="width: 15rem;">
+<div class="card text-white bg-dark mb-3" style="width: 15rem;">
   <div class="card-body">
     <h5 class="card-title text-center"><a href="{{ url('/produtos/racao') }}" style="text-decoration: none; color: #fff;" data-toggle="tooltip" data-placement="right" title="Ir para ração">Ração</h5>
     <img src="{{ asset('img/rac.jpg')}}" class="img-thumbnail">
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="card text-white bg-success mb-3" style="width: 15rem;">
+<div class="card text-white bg-dark mb-3" style="width: 15rem;">
   <div class="card-body">
     <h5 class="card-title text-center"><a href="{{ url('/produtos/higiene') }}" style="text-decoration: none; color: #fff;" data-toggle="tooltip" data-placement="right" title="Ir para higiene">Higiene</h5>
     <img src="{{ asset('img/tapet.jpg')}}" class="img-thumbnail">
@@ -56,7 +56,7 @@
   </div>
 </div>
 
-<div class="card text-white bg-success mb-3" style="width: 15rem;">
+<div class="card text-white bg-dark mb-3" style="width: 15rem;">
   <div class="card-body">
     <h5 class="card-title text-center"><a href="{{ url('/produtos/remedios') }}" style="text-decoration: none; color: #fff;" data-toggle="tooltip" data-placement="right" title="Ir para remédios">Remédios</h5>
     <img src="{{ asset('img/remedio.jpg')}}" class="img-thumbnail">

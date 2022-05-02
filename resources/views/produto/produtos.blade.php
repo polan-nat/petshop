@@ -1,13 +1,11 @@
 @include('produto.sidebar')
 
 <!-- Criar uma table de pagina inicial com imagens ja utilizadas. -->
-<div class="position-relative">
-    <div class="position-absolute bottom-0 start-0">
-<table class="table">
+<table class="table table-borderless" style="position: fixed; top: 170px; left: 350px">
     <tbody>
-        <tr>
-            <td class="col-3">
-                <div class="card h-70">
+        <tr class="d-flex">
+            <td class="col-4">
+                <div class="card h-70 bg-dark text-white">
                   <img src="{{ asset('img/brinq.jpg')}}" class="img-thumbnail" width="150px">
                   <div class="card-body">
                     <h5 class="card-title">Brinquedos</h5>
@@ -16,8 +14,8 @@
                 </div>
               </div>
             </td>
-            <td class="col-3">
-                <div class="card h-70">
+            <td class="col-4">
+                <div class="card h-70 bg-dark text-white">
                   <img src="{{ asset('img/tapet.jpg')}}" class="img-thumbnail" width="150px">
                   <div class="card-body">
                     <h5 class="card-title">Higiene</h5>
@@ -27,9 +25,9 @@
               </div>
             </td> 
         </tr>
-        <tr>
-            <td class="col-3">
-                <div class="card h-70">
+        <tr class="d-flex">
+            <td class="col-4">
+                <div class="card h-70 bg-dark text-white">
                   <img src="{{ asset('img/rac.jpg')}}" class="img-thumbnail" width="150px">
                   <div class="card-body">
                     <h5 class="card-title">Ração</h5>
@@ -38,8 +36,8 @@
                 </div>
               </div>
             </td>
-            <td class="col-3">
-                <div class="card h-70">
+            <td class="col-4">
+                <div class="card h-70 bg-dark text-white">
                   <img src="{{ asset('img/remedio.jpg')}}" class="img-thumbnail" width="150px">
                   <div class="card-body">
                     <h5 class="card-title">Remédios</h5>
@@ -50,4 +48,4 @@
             </td>
         </tr>
     </tbody>
-</table></div></div>
+</table>

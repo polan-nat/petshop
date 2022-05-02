@@ -29,8 +29,6 @@
                     <label class="form-label">Senha</label>
                     <input type="password" class="form-control" id="password" name="password" disabled>
                 </div>
-                <button type="submit" class="btn btn-outline fw-bold" style="background-color: #d4bbe8; color: #fff;">Atualizar</button>
-            <!-- Incrementar opção de atualizar o cadastro ou excluir-->
     </form>
     <button class="btn btn-outline-danger mt-2"><a href="{{ url('/sair') }}" class="text-decoration-none">Sair</a></button>
 </div>

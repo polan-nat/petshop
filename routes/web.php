@@ -31,7 +31,6 @@ Route::get('/entrar', [Entrar::class, 'index']);
 Route::post('/entrar', [Entrar::class, 'entrar']);
 Route::get('/usuario', [Entrar::class, 'user']);
 
-
 //produtos
 Route::get('/produtos', [Produtos::class,'index']);
 Route::get('/produtos/toy', [Produtos::class, 'toy']);
